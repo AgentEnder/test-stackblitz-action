@@ -1,0 +1,11 @@
+{
+    "root": "apps/verdaccio-instance",
+    "targets": {
+        "serve": {
+            "executor": "@nrwl/workspace:run-commands",
+            "options": {
+                "command": "npx verdaccio --config ./apps/verdaccio-instance/config.yml --listen 4872"
+            }
+        }
+    }
+}

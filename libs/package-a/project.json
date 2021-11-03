@@ -28,6 +28,12 @@
         "main": "libs/package-a/src/index.ts",
         "assets": ["libs/package-a/*.md"]
       }
+    },
+    "publish": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "npm publish dist/libs/package-a"
+      }
     }
   },
   "tags": []

@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "package-a": "libs/package-a",
-    "package-b": "libs/package-b"
+    "package-b": "libs/package-b",
+    "verdaccio-instance": "apps/verdaccio-instance"
   }
 }

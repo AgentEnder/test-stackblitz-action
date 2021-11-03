@@ -1,0 +1,2 @@
+@test-stackblitz-action:registry=http://localhost:4872
+//localhost:4872/:_authToken="fake=="

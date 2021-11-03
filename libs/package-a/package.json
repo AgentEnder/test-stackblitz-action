@@ -1,4 +1,7 @@
 {
   "name": "@test-stackblitz-action/package-a",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "bin": {
+    "@test-stackblitz-action/package-a": "./src/bin/cli.js"
+  }
 }

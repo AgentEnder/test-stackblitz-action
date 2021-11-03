@@ -1,3 +1,3 @@
 export function packageB(): string {
-  return 'package-b';
+  return 'Package B in main!';
 }
