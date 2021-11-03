@@ -4,6 +4,7 @@ import { copyFileSync, existsSync, ensureDirSync } from 'fs-extra';
 import { rmSync, writeFileSync } from 'fs';
 
 const rootPath = join(__dirname, '../../');
+const tmpPath = join(rootPath, './tmp';
 
 async function spawnLocalRegistry(): Promise<cp.ChildProcess> {
   cp.execSync('npx kill-port 4872');
@@ -37,7 +38,9 @@ function publishAllPackages() {
   });
 }
 
-rmSync(join(rootPath, './tmp'), { recursive: true });
+if( existsSync(tmpPath)) {
+    rmSync(tmpPath, { recursive: true });
+}
 const sandboxPath = join(rootPath, './tmp/sandbox');
 ensureDirSync(sandboxPath);
 
