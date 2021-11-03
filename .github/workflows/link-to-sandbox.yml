@@ -1,0 +1,10 @@
+name: Link to Stackblitz Sandbox
+on: [pull_request]
+jobs:
+  Comment on PR:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          message: |
+            Check out this change at <https://stackblitz.com/github/agentender/test-stackblitz-action/tree/${{ github.sha }}>
