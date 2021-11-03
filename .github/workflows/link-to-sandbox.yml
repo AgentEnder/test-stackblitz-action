@@ -1,7 +1,7 @@
 name: Link to Stackblitz Sandbox
 on: [pull_request]
 jobs:
-  Comment on PR:
+  CommentOnPR:
     runs-on: ubuntu-latest
     steps:
       - uses: marocchino/sticky-pull-request-comment@v2
